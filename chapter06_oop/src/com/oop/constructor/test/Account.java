@@ -12,29 +12,11 @@ public class Account {
     private int id;
     private double balance;
     private double annualIntereatRate;
-
-    //mian方法
-    public static void main(String[] args) {
-        //创建对象
-        Account account = new Account();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("请输入您的账号：");
-        account.setId(sc.nextInt());
-        System.out.println("请输入您的余额：");
-        account.setBalance(sc.nextDouble());
-        account.setAnnualIntereatRate(0.035);
-        System.out.println("请做出choice：1.取款 2.存款 ");
-        int choice = sc.nextInt();
-        switch (choice) {
-
-            case 1:
-                System.out.println("请输入取款金额：");
-                account.withdraw(sc.nextDouble());
-                break;
-            case 2:
-                System.out.println("请输入存款金额：");
-                account.desposit(sc.nextDouble());
-        }
+    //构造器
+    public Account(int d, double b, double a) {
+        id = d;
+        balance = b;
+        annualIntereatRate = a;
     }
 
     //getter和setter方法获取属性值
@@ -73,9 +55,9 @@ public class Account {
 
     //取款方法
     public void withdraw(double amount) {
-        if (amount <= balance) {
+        if (amount <= balance && amount >0) {
             balance -= amount;
-            System.out.println("您取款成功，当前余额为：" + balance);
+            System.out.println("成功取出" + amount);
         } else {
             System.out.println("您的余额不足，取款失败");
         }
@@ -84,7 +66,7 @@ public class Account {
     public void desposit(double amount) {
         if (amount >= 0) {
             balance += amount;
-            System.out.println("存款成功，当前余额为：" + balance);
+            System.out.println("成功存入：" + amount);
         } else {
             System.out.println("您的输入有误");
         }

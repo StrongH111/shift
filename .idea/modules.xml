@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/chapter03/chapter03.iml" filepath="$PROJECT_DIR$/chapter03/chapter03.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter06_oop/chapter06_oop.iml" filepath="$PROJECT_DIR$/chapter06_oop/chapter06_oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter07_oop/chapter07_oop.iml" filepath="$PROJECT_DIR$/chapter07_oop/chapter07_oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java入门.iml" filepath="$PROJECT_DIR$/.idea/java入门.iml" />
     </modules>
   </component>
