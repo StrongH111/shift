@@ -11,4 +11,27 @@ public abstract class Vehicle {
         this.brand = brand;
         this.color = color;
     }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public abstract void run();
+    //抽象方法不写方法体
+
+    @Override
+    public String toString() {
+        return "brand='" + brand + '\'' + ", color='" + color + '\'' + '}';
+    }
 }

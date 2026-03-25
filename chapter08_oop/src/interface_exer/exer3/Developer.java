@@ -1,13 +1,13 @@
 package interface_exer.exer3;
 
-public class Develpoer {
+public class Developer {
     private String name;
     private int age;
 
-    public Develpoer() {
+    public Developer() {
     }
 
-    public Develpoer(String name, int age) {
+    public Developer(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -29,6 +29,6 @@ public class Develpoer {
     }
     //乘坐工具
     public void takingVehicle(Vehicle vehicle){
-
+        vehicle.run();
     }
 }
